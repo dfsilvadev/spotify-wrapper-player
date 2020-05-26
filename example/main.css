@@ -16,7 +16,7 @@ body {
 	background: #0f1015;
 	box-shadow: 0px 5px 8px #0f1015;
 	height: 100vh;
-	width: 450px;
+	width: 300px;
 }
 .aside-container {
 	padding: 20px;
@@ -44,7 +44,7 @@ body {
 	width: 32px;
 }
 .aside-title {
-	font-size: 16px;
+	font-size: 23px;
 	font-weight: 600;
 }
 .form-wrapper {
@@ -70,7 +70,7 @@ body {
 .form-input:focus {
 	color: #1ed760;
 }
-.form-input:focus+.form-icon {
+.form-input:focus + .form-icon {
 	color: #1ed760;
 }
 .form-icon {
@@ -79,7 +79,7 @@ body {
 }
 .list {
 	height: 85vh;
-    overflow-y: scroll;
+	overflow-y: scroll;
 }
 .list-item {
 	align-items: center;
@@ -91,13 +91,13 @@ body {
 	transition: opacity .2s;
 }
 .list-title {
-    font-weight: 400;
-    font-size: 14px;
+	font-weight: 400;
+	font-size: 14px;
 }
 .list-subtitle {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
-    font-weight: 300;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 12px;
+	font-weight: 300;
 }
 .list-item:nth-of-type(even) {
 	background: rgba(29, 32, 40, 0.61);
@@ -117,48 +117,55 @@ body {
     MAIN
 ********************/
 .container {
-	background-image: linear-gradient(rgb(70, 76, 82), rgb(7, 7, 8) 85%);
+	background-image: linear-gradient(rgb(141, 137, 175), rgb(7, 7, 8) 75%);
 	height: 100vh;
-	overflow-y: scroll;
-    width: 100%;
+	width: 100%;
 }
 .container-inner {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-	padding: 50px;
-}
-.album-info, 
-.album-musics {
-    flex-basis: 45%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
 }
 .album-info {
-	text-align: center;
+	height: 330px;
+	background-image: linear-gradient(rgb(141, 137, 175), rgb(72, 70, 89) 85%);
+	padding: 0 10px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+}
+.album-info span.padding {
+	padding: 20px 10px;
 }
 .album-image {
 	width: 250px;
 	height: 250px;
+	margin: 20px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
 }
 .album-title {
 	color: #fff;
-	font-size: 22px;
-	margin: 10px 0 0;
+	font-size: 82px;
+	line-height: 80px;
+	font-weight: 900;
 }
 .album-artist {
-	font-size: 14px;
+	font-size: 40px;
 }
 .album-counter {
 	font-size: 12px;
 }
 .album-artist,
 .album-counter {
-    font-family: 'Roboto Mono', monospace;
-	font-weight: 300;
-	margin-bottom: 10px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
 }
 .album-musics {
-    padding: 10px;
+	height: 61vh;
+	padding: 20px;
+	overflow-y: scroll;
 }
 .play-btn {
 	background: #1ed760;
@@ -177,13 +184,13 @@ body {
 .music {
 	cursor: pointer;
 	display: flex;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 300;
 	transition: background .3s;
 	width: 100%;
 }
 .music.active {
-    font-weight: 600;
+	font-weight: 600;
 	color: #16a248;
 }
 .music.active .music-title {
@@ -198,8 +205,8 @@ body {
 	padding: 10px;
 }
 .music-number {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 100;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 100;
 	margin-right: 20px;
 	min-width: 25px;
 }
@@ -207,16 +214,15 @@ body {
 	content: '.';
 }
 .music-title {
-    color: rgba(255, 255, 255, 0.81);
-    font-size: 14px;
+	color: rgba(255, 255, 255, 0.81);
+	font-size: 14px;
 	width: 100%;
 }
 .music-duration {
-    font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto Mono', monospace;
 	text-align: right;
 	width: 100%;
 }
-
 
 /* SCROLLBAR */
 
