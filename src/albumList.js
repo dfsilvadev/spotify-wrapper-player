@@ -1,6 +1,8 @@
 'use strict';
 function createMarkup(data) {
-  return data.map((album) => `
+	return data
+		.map(
+			(album) => `
     <div class="list-item">
       <img src="${album.images[2].url}" alt="${album.name}" class="list-image">
       <div class="list-description">
@@ -8,10 +10,11 @@ function createMarkup(data) {
         <p class="list-subtitle">${album.artists[0].name}</p>
       </div>
     </div>`
-  ).join('');
+		)
+		.join('');
 }
 export default function renderAlbums(data, element) {
-  const markup = createMarkup(data)
+	const markup = createMarkup(data);
 
-  element.innerHTML = markup;
+	element.innerHTML = markup;
 }
