@@ -1,3 +1,4 @@
+'use strict';
 function createMarkup(data) {
   return data.map((album) => `
     <div class="list-item">
