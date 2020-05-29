@@ -3,7 +3,7 @@ import SpotifyWrapper from 'dxp-spotify-api-wrapper';
 
 const spotify = new SpotifyWrapper({
 	apiURL: `https://api.spotify.com/v1`,
-	token: `BQCEJ4P0cPSUC4F2WvaFo9fwllV2U_PUjiDgOeEU3jFLlA4eUxdMawKweO8Ut8FdtGwEvMfeiAj__HNCFnkwslX-HYndgPsUhUNLDTzvjasEv2tjO6bwiMhiBWnbfd8dEvR01jStTXkjE5s`
+	token: `BQBrF4Dt_WeQiLJDNhjr2HzTbHRgvTKZjFUHJbk8hJzO9QKwZ4NFpahsJF4dUAkw6Kh3p5y3wgQACOslYj4djBNrxWet2tTSUtKOYUcBawJEuQEO9bdqIEUxTOo1Ib4G7PGhRfnEo9aCQgI`
 });
 
 export default spotify;
