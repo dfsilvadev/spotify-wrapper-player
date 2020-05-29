@@ -2,6 +2,7 @@ import 'jsdom-global/register';
 import { expect } from 'chai';
 import renderAlbumInfo from '../src/albumTracks';
 import renderAlbumTracks from '../src/albumTracks';
+import converteToHumanTime from '../src/converteToHumanTime';
 
 describe('AlbumTracks', () => {
 	const data = [
@@ -35,19 +36,19 @@ describe('AlbumTracks', () => {
         <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/ab3d501c5ffbf560e94094f76cd36d874a26e941?cid=8897482848704f2a8f8d7c79726a70d4">
             <p class="music-number">1</p>
             <p class="music-title">Around The World</p>
-            <p class="music-duration">238733</p>
+            <p class="music-duration">${converteToHumanTime(238733)}</p>
         </div>`;
 
 	const markupTwo = `
         <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/ab3d501c5ffbf560e94094f76cd36d874a26e941?cid=8897482848704f2a8f8d7c79726a70d4">
             <p class="music-number">1</p>
             <p class="music-title">Around The World</p>
-            <p class="music-duration">238733</p>
+            <p class="music-duration">${converteToHumanTime(238733)}</p>
         </div>
         <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/ab3d501c5ffbf560e94094f76cd36d874a26e941?cid=8897482848704f2a8f8d7c79726a70d4">
             <p class="music-number">1</p>
             <p class="music-title">Around The World</p>
-            <p class="music-duration">238733</p>
+            <p class="music-duration">${converteToHumanTime(238733)}</p>
         </div>`;
 
 	it('should create and append the markup given a correct data', () => {
