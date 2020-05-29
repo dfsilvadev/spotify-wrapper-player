@@ -1,4 +1,6 @@
 'use strict';
+import converteToHumanTime from './converteToHumanTime';
+
 function createMarkup(tracks) {
 	return tracks
 		.map(
@@ -6,7 +8,7 @@ function createMarkup(tracks) {
         <div class="music" data-track-preview="${track.preview_url}">
             <p class="music-number">${track.track_number}</p>
             <p class="music-title">${track.name}</p>
-            <p class="music-duration">${track.duration_ms}</p>
+            <p class="music-duration">${converteToHumanTime(track.duration_ms)}</p>
         </div>`
 		)
 		.join('');
